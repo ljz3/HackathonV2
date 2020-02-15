@@ -11,26 +11,30 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <LinearLayout
+            android:id="@+id/Money_per_pay"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_marginTop="@dimen/edit_field_margin"
-            android:orientation="horizontal"
-            >
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edit_field_margin"
+            android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/money_per_pay"
-                android:fontFamily="monospace"
-                android:textColor="@color/textColor"
-                />
+                android:text="Monthly Income"
+                android:textSize="14sp"></TextView>
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="@dimen/edit_field_margin"/>
-
-
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:paddingLeft="@dimen/edit_field_margin"></EditText>
         </LinearLayout>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+
     </LinearLayout>
 </ScrollView>
