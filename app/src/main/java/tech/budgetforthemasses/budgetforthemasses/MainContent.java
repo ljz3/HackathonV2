@@ -40,7 +40,15 @@ public class MainContent extends AppCompatActivity {
                 int others = Integer.parseInt(others_edit.getText().toString());
                 int savings = Integer.parseInt(savings_edit.getText().toString());
 
-                
+                int needs = rent + gas + water + electricity + food_cost + phone_bill;
+                int wants = entertainment + hobbies + others;
+                int leftover = income - needs - wants - savings;
+
+                float precent_needs = ((float)needs / (float)income)*100;
+                float precent_wants = ((float)wants / (float)income)*100;
+                float precent_saved = ((float)savings / (float)income)*100;
+                float precent_leftover = ((float)leftover / (float)income)*100;
+
 
 
             }
