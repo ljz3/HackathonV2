@@ -21,7 +21,10 @@
     </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/content_main" />
-
+    <lecho.lib.hellocharts.view.PieChartView
+        android:id="@+id/chart"
+        android:layout_width="180"
+        android:layout_height="800" />
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
