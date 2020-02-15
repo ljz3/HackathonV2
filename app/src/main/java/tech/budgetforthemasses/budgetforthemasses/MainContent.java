@@ -1,4 +1,5 @@
 package tech.budgetforthemasses.budgetforthemasses;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -49,7 +50,8 @@ public class MainContent extends AppCompatActivity {
                 float precent_saved = ((float)savings / (float)income)*100;
                 float precent_leftover = ((float)leftover / (float)income)*100;
 
-
+                Intent move_to_output = new Intent(getApplicationContext(),MainOutput.class);
+                startActivity(move_to_output);
 
             }
         });
