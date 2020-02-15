@@ -294,7 +294,19 @@
                 android:inputType="number"
                 android:paddingLeft="@dimen/edit_field_margin"/>
         </LinearLayout>
+        <LinearLayout
+            android:id="@+id/submit_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edit_field_margin"
+            android:orientation="horizontal">
 
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"/>
 
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
