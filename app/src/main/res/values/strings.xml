@@ -15,6 +15,8 @@
         <item>Monthly</item>
         <item>Yearly</item>
     </string-array>
+    <string name="title_text">    Budget\nFor The\nMasses</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
