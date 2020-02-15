@@ -20,6 +20,21 @@ tools:context=".MainActivity">
 
 </android.support.design.widget.AppBarLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:translationY="@dimen/pieText_ytran">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The resulting Graph:">
+
+        </TextView>
+
+    </LinearLayout>
+
 
     <lecho.lib.hellocharts.view.PieChartView
     android:id="@+id/chart"
@@ -27,7 +42,7 @@ tools:context=".MainActivity">
     android:layout_height="@dimen/pie_height"
 
         android:translationY="@dimen/pie_ytran"/>
-    
+
 
 <android.support.design.widget.FloatingActionButton
     android:id="@+id/fab"

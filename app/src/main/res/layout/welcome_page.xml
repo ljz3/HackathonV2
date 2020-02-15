@@ -11,7 +11,18 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/angryimg">
+        android:background="@drawable/angryimg"
+        android:gravity="bottom">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/coins"
+            android:scaleY="0.33"
+            android:translationY="270dp">
+
+        </ImageView>
     </LinearLayout>
 
     <LinearLayout
@@ -22,10 +33,10 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:layout_marginLeft="25dp"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
             android:text="BUDGET"
             android:textColor="#59E059"
             android:textSize="60dp"
@@ -33,22 +44,58 @@
         </TextView>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
+            android:gravity="center"
             android:text="FOR THE"
             android:textColor="#59E059"
             android:textSize="40dp"
             android:textStyle="bold|italic"></TextView>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
+            android:gravity="center"
             android:text="MASSES"
             android:textColor="#59E059"
             android:textSize="60dp"
             android:textStyle="bold|italic">
         </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="#59E059"
+            android:text="Begin">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="450dp"
+        android:gravity="center">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo"
+            android:foregroundGravity="center"
+            android:scaleX="2"
+            android:scaleY="2">
+
+        </ImageView>
+
+
 
     </LinearLayout>
 
