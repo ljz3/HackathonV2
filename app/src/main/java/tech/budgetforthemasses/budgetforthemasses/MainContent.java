@@ -58,7 +58,7 @@ public class MainContent extends AppCompatActivity {
                 float precent_leftover = ((float)leftover / (float)income)*100;
 
                 Intent move_to_output = new Intent(getApplicationContext(),MainOutput.class);
-                
+
                 startActivity(move_to_output);
 
             }
