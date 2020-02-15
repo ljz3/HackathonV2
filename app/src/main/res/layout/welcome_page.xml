@@ -13,16 +13,6 @@
         android:layout_height="match_parent"
         android:background="@drawable/angryimg"
         android:gravity="bottom">
-
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/coins"
-            android:scaleY="0.33"
-            android:translationY="270dp">
-
-        </ImageView>
     </LinearLayout>
 
     <LinearLayout
@@ -94,9 +84,6 @@
             android:scaleY="2">
 
         </ImageView>
-
-
-
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
