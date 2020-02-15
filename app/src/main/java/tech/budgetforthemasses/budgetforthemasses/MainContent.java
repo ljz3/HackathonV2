@@ -1,10 +1,12 @@
 package tech.budgetforthemasses.budgetforthemasses;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 
 public class MainContent extends AppCompatActivity {
     @Override
@@ -18,6 +20,7 @@ public class MainContent extends AppCompatActivity {
             public void onClick(View view) {
 
                 EditText income_edit = (EditText) findViewById(R.id.income_edit);
+                RadioButton time_frame = (RadioButton) findViewById(R.id.radioBiWeekly) ;
                 EditText rent_edit = (EditText) findViewById(R.id.rent_edit);
                 EditText gas_edit = (EditText) findViewById(R.id.gas_edit);
                 EditText water_edit = (EditText) findViewById(R.id.water_edit);
@@ -30,6 +33,10 @@ public class MainContent extends AppCompatActivity {
                 EditText savings_edit = (EditText) findViewById(R.id.savings_edit);
 
                 int income = Integer.parseInt(income_edit.getText().toString());
+                if(time_frame.isChecked())
+                {
+                    income = income * 2;
+                }
                 int rent = Integer.parseInt(rent_edit.getText().toString());
                 int gas = Integer.parseInt(gas_edit.getText().toString());
                 int water = Integer.parseInt(water_edit.getText().toString());
@@ -61,6 +68,7 @@ public class MainContent extends AppCompatActivity {
                 intent.putExtra("saved", precent_saved);
                 intent.putExtra("leftover", precent_leftover);
                 startActivity(intent);
+
             }
         });
 
