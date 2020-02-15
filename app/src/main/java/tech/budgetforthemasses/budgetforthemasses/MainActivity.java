@@ -17,6 +17,10 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+        DrawerLayout drawer;
+        NavigationView navigationView;
+        Toolbar toolbar = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -83,10 +87,13 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_settings) {
-            // Handle the camera action
-        } else if (id == R.id.nav_financials) {
 
+        } else if (id == R.id.nav_financials) {
+            Intent m = new Intent(MainActivity.this, MainOutput.class);
+            startActivity(m);
         } else if (id == R.id.nav_overview) {
+            Intent j = new Intent(MainActivity.this, MainActivity.class);
+            startActivity(j);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
