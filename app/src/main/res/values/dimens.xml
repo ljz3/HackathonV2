@@ -9,5 +9,6 @@
     <dimen name="pie_width">380dp</dimen>
     <dimen name="pie_height">200dp</dimen>
     <dimen name="pie_ytran">100dp</dimen>
+    <dimen name="pieText_ytran">80dp</dimen>
 
 </resources>
