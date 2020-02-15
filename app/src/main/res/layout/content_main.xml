@@ -24,13 +24,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/money_per_pay"
-                android:textSize="14sp"/>
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:textColor="@color/textColor"/>
 
             <EditText
                 android:id="@+id/income_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
+                android:layout_marginBottom="@dimen/edit_field_margin"
                 android:paddingLeft="@dimen/edit_field_margin"/>
         </LinearLayout>
 
