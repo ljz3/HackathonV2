@@ -37,10 +37,30 @@
                 android:paddingLeft="@dimen/edit_field_margin"/>
         </LinearLayout>
 
-        <Spinner
-            android:id="@+id/timeframe_spinner"
+        <RadioGroup
+            android:id="@+id/timeframe_group"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" >
+
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bi-Weekly"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:text="Monthly" />
+
+        </RadioGroup>
 
 
     </LinearLayout>
