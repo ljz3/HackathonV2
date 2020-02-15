@@ -48,18 +48,32 @@ public class MainContent extends AppCompatActivity {
                 int others = Integer.parseInt(others_edit.getText().toString());
                 int savings = Integer.parseInt(savings_edit.getText().toString());
 
-                int needs = rent + gas + water + electricity + food_cost + phone_bill;
-                int wants = entertainment + hobbies + others;
-                int leftover = income - needs - wants - savings;
 
-                float precent_needs = ((float)needs / (float)income)*100;
+                int utilities = gas + water + electricity + phone_bill;
+                int wants = entertainment + hobbies + others;
+                int leftover = income - food_cost - rent - utilities - wants - savings;
+
+                float precent_food = ((float)food_cost / (float)income)*100;
+                float precent_rent = ((float)rent / (float)income)*100;
+                float precent_util = ((float)utilities / (float)income)*100;
                 float precent_wants = ((float)wants / (float)income)*100;
                 float precent_saved = ((float)savings / (float)income)*100;
                 float precent_leftover = ((float)leftover / (float)income)*100;
 
+<<<<<<< HEAD
                 Intent move_to_output = new Intent(getApplicationContext(),MainOutput.class);
 
                 startActivity(move_to_output);
+=======
+               Intent intent = new Intent(MainContent.this,MainOutput.class);
+               intent.putExtra("food", precent_food);
+                intent.putExtra("rent", precent_rent);
+                intent.putExtra("util", precent_util);
+                intent.putExtra("want", precent_wants);
+                intent.putExtra("saved", precent_saved);
+                intent.putExtra("leftover", precent_leftover);
+                startActivity(intent);
+>>>>>>> 4d965a5aaa64ca6b4493c4cf7976fdc64676025d
 
             }
         });
