@@ -60,11 +60,7 @@ public class MainContent extends AppCompatActivity {
                 float precent_saved = ((float)savings / (float)income)*100;
                 float precent_leftover = ((float)leftover / (float)income)*100;
 
-<<<<<<< HEAD
-                Intent move_to_output = new Intent(getApplicationContext(),MainOutput.class);
 
-                startActivity(move_to_output);
-=======
                Intent intent = new Intent(MainContent.this,MainOutput.class);
                intent.putExtra("food", precent_food);
                 intent.putExtra("rent", precent_rent);
@@ -73,7 +69,7 @@ public class MainContent extends AppCompatActivity {
                 intent.putExtra("saved", precent_saved);
                 intent.putExtra("leftover", precent_leftover);
                 startActivity(intent);
->>>>>>> 4d965a5aaa64ca6b4493c4cf7976fdc64676025d
+
 
             }
         });
