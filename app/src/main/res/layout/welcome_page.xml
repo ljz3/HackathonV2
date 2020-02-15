@@ -11,81 +11,27 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/angryimg"
+        android:background="@drawable/tittle"
         android:gravity="bottom">
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="120dp"
-            android:gravity="center"
-            android:text="BUDGET"
-            android:textColor="#59E059"
-            android:textSize="60dp"
-            android:textStyle="bold|italic"></TextView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="FOR THE"
-            android:textColor="#59E059"
-            android:textSize="40dp"
-            android:textStyle="bold|italic"></TextView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="MASSES"
-            android:textColor="#59E059"
-            android:textSize="60dp"
-            android:textStyle="bold|italic"></TextView>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/open_button"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="#258F07"
+        android:text="Begin"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
         app:layout_constraintTop_toTopOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.56">
+        app:layout_constraintVertical_bias="0.9">
 
-        <Button
-            android:id="@+id/open_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/activity_horizontal_margin"
-            android:background="#59E059"
-            android:text="Begin"></Button>
-    </LinearLayout>
+    </Button>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:paddingTop="450dp">
-
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/logo"
-            android:foregroundGravity="center"
-            android:scaleX="2"
-            android:scaleY="2">
-
-        </ImageView>
-    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
