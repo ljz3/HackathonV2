@@ -23,7 +23,7 @@
                 android:id="@+id/income_name_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/money_per_pay"
+                android:text="Amount Per Pay $"
                 android:textSize="14sp"
                 android:fontFamily="monospace"
                 android:textColor="@color/textColor"/>
@@ -33,7 +33,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:layout_marginBottom="@dimen/edit_field_margin"
                 android:paddingLeft="@dimen/edit_field_margin"/>
         </LinearLayout>
 
@@ -62,6 +61,99 @@
 
         </RadioGroup>
 
+        <LinearLayout
+            android:id="@+id/rent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edit_field_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rent_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly Rent/Mortgage $"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:textColor="@color/textColor"/>
+
+            <EditText
+                android:id="@+id/rent_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:paddingLeft="@dimen/edit_field_margin"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gas_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edit_field_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/gas_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="Monthly Gas Bill $"
+                android:textColor="@color/textColor"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/gas_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:paddingLeft="@dimen/edit_field_margin" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/water_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edit_field_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/water_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="Monthly Water Bill $"
+                android:textColor="@color/textColor"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/water_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:paddingLeft="@dimen/edit_field_margin" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/electricity_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edit_field_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/electricity_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="Monthly Electricity Bill $"
+                android:textColor="@color/textColor"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/electricity_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:paddingLeft="@dimen/edit_field_margin" />
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>

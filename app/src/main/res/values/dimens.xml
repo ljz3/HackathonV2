@@ -9,11 +9,7 @@
     <dimen name="pie_width">380dp</dimen>
     <dimen name="pie_height">200dp</dimen>
     <dimen name="pie_ytran">100dp</dimen>
-<<<<<<< HEAD
-    <dimen name="begin_button_left_shift">160dp</dimen>
-    <dimen name="begin_button_down_shift">500dp</dimen>
-=======
     <dimen name="pieText_ytran">80dp</dimen>
->>>>>>> 66c90e16fd43cdfa8fe36d504d7b1834b95bbb7a
+
 
 </resources>
