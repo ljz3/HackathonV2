@@ -39,7 +39,8 @@
         <RadioGroup
             android:id="@+id/timeframe_group"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin">
 
 
             <RadioButton
@@ -154,6 +155,146 @@
                 android:inputType="number"
                 android:paddingLeft="@dimen/edit_field_margin" />
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phone_bill_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edit_field_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/phone_bill_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly Phone Bill $"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:textColor="@color/textColor"/>
+
+            <EditText
+                android:id="@+id/phone_bill_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:paddingLeft="@dimen/edit_field_margin"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/food_cost_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edit_field_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/food_cost_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly Food Cost $"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:textColor="@color/textColor"/>
+
+            <EditText
+                android:id="@+id/food_cost_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:paddingLeft="@dimen/edit_field_margin"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/entertainment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edit_field_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/entertainment_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly Cost on Entertainment $"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:textColor="@color/textColor"/>
+
+            <EditText
+                android:id="@+id/entertainment_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:paddingLeft="@dimen/edit_field_margin"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/hobbies_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edit_field_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/hobbies_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly Cost For Hobbies $"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:textColor="@color/textColor"/>
+
+            <EditText
+                android:id="@+id/hobbies_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:paddingLeft="@dimen/edit_field_margin"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/others_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edit_field_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/others_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly Other Costs $"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:textColor="@color/textColor"/>
+
+            <EditText
+                android:id="@+id/others_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:paddingLeft="@dimen/edit_field_margin"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/savings_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edit_field_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/savings_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly Savings Deposit $"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:textColor="@color/textColor"/>
+
+            <EditText
+                android:id="@+id/savings_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:paddingLeft="@dimen/edit_field_margin"/>
+        </LinearLayout>
+
 
     </LinearLayout>
 </ScrollView>
