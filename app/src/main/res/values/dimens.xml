@@ -9,5 +9,7 @@
     <dimen name="pie_width">380dp</dimen>
     <dimen name="pie_height">200dp</dimen>
     <dimen name="pie_ytran">100dp</dimen>
+    <dimen name="begin_button_left_shift">160dp</dimen>
+    <dimen name="begin_button_down_shift">500dp</dimen>
 
 </resources>
