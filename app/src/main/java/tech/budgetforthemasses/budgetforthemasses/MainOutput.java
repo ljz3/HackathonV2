@@ -68,6 +68,7 @@ public class MainOutput extends AppCompatActivity implements NavigationView.OnNa
         }
 
         return super.onOptionsItemSelected(item);
+
     }
 
     @SuppressWarnings("StatementWithEmptyBody")

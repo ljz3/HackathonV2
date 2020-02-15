@@ -44,7 +44,7 @@
 
 
             <RadioButton
-                android:id="@+id/radioMale"
+                android:id="@+id/radioBiWeekly"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Bi-Weekly"
@@ -53,7 +53,7 @@
                 android:checked="true" />
 
             <RadioButton
-                android:id="@+id/radioFemale"
+                android:id="@+id/radioMonthly"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="14sp"
