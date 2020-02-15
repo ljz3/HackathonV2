@@ -9,5 +9,6 @@ public class MainOutput extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.output_main);
 
+
     }
 }
