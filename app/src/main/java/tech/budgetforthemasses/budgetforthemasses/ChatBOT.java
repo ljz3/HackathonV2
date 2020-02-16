@@ -29,8 +29,31 @@ public class ChatBOT extends AppCompatActivity {
                 TextView input1 = (TextView)findViewById(R.id.text_input1);
                 TextView input2 = (TextView)findViewById(R.id.text_input2);
                 TextView input3 = (TextView)findViewById(R.id.text_input3);
+                TextView respond1 =(TextView)findViewById(R.id.text_response1);
+                TextView respond2 =(TextView)findViewById(R.id.text_response2);
+                TextView respond3 =(TextView)findViewById(R.id.text_response3);
 
-                if(text)
+                if(input1.getText() == "")
+                {
+                    input1.setText(userInput.getText());
+                    respond1.setText("What can I help you with, feel free to ask me anything?");
+                }
+                else if(input2.getText() == "")
+                {
+                    input2.setText(input1.getText());
+                    respond2.setText(respond1.getText());
+                    input1.setText(userInput.getText());
+                    respond1.setText("If you enter your financial information in the given text fields we can provide you with some budgeting advice.");
+
+                }
+                else {
+                    input3.setText(input2.getText());
+                    respond3.setText(respond2.getText());
+                    input2.setText(input1.getText());
+                    respond2.setText(respond1.getText());
+                    input1.setText(userInput.getText());
+                    respond1.setText("Sorry we cannot answer that question at the moment, please consider looking at http://i.investopedia.com/inv/pdf/tutorials/budgeting-basics.pdf or another website.");
+                }
             }
         });
     }
