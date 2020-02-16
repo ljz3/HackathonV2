@@ -18,12 +18,19 @@ public class ChatBOT extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chatbot);
 
+        int count =0;
 
-        Button open_button = (Button) findViewById(R.id.MoreTips);
+
+        Button open_button = (Button) findViewById(R.id.enter_button);
         open_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                EditText userInput = (EditText) findViewById(R.id.)
+                EditText userInput = (EditText) findViewById(R.id.user_input_text);
+                TextView input1 = (TextView)findViewById(R.id.text_input1);
+                TextView input2 = (TextView)findViewById(R.id.text_input2);
+                TextView input3 = (TextView)findViewById(R.id.text_input3);
+
+                if(text)
             }
         });
     }

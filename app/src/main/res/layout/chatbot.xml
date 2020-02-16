@@ -20,7 +20,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/test_response1"
+                android:id="@+id/text_response1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
@@ -34,7 +34,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/test_input1"
+                android:id="@+id/text_input1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
@@ -48,7 +48,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/test_response2"
+                android:id="@+id/text_response2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
@@ -62,7 +62,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/test_input2"
+                android:id="@+id/text_input2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
@@ -76,7 +76,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/test_response3"
+                android:id="@+id/text_response3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
