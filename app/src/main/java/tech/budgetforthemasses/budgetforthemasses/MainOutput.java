@@ -9,6 +9,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 public class MainOutput extends AppCompatActivity {
 
     @Override
@@ -35,22 +37,22 @@ public class MainOutput extends AppCompatActivity {
         String saved = i.getStringExtra("saved");
         String leftover = i.getStringExtra("leftover");
         String income = i.getStringExtra("income");
+        Long formated = Math.round(Double.parseDouble(rent)*100);
 
-
-        TextView textboxOne = (TextView) (findViewById(R.id.rent_result));
-        textboxOne.setText(rent + "");
-        TextView textboxTwo = (TextView) (findViewById(R.id.incomeAfterTax_result));
-        textboxTwo.setText(income + "");
-        TextView textboxThree = (TextView) (findViewById(R.id.food_result));
-        textboxThree.setText(food + "");
-        TextView textboxFour = (TextView) (findViewById(R.id.util_result));
-        textboxFour.setText(util + "");
-        TextView textboxFive = (TextView) (findViewById(R.id.wants_result));
-        textboxFive.setText(want + "");
-        TextView textboxSix = (TextView) (findViewById(R.id.leftover_result));
-        textboxSix.setText(leftover + "");
-        TextView textboxSeven = (TextView) (findViewById(R.id.saving_result));
-        textboxSeven.setText(saved + "");
+        TextView textboxResult = (TextView) (findViewById(R.id.rent_result));
+        textboxResult.setText(formated/100+"");
+        TextView textboxIncome = (TextView) (findViewById(R.id.incomeAfterTax_result));
+        textboxIncome.setText(income);
+        TextView textboxFood = (TextView) (findViewById(R.id.food_result));
+        textboxFood.setText(food);
+        TextView textboxUtilities = (TextView) (findViewById(R.id.util_result));
+        textboxUtilities.setText(util);
+        TextView textboxWants = (TextView) (findViewById(R.id.wants_result));
+        textboxWants.setText(want);
+        TextView textboxLeftover = (TextView) (findViewById(R.id.leftover_result));
+        textboxLeftover.setText(leftover);
+        TextView textboxSavings = (TextView) (findViewById(R.id.saving_result));
+        textboxSavings.setText(saved);
 
     }
 

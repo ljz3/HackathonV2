@@ -33,10 +33,23 @@ public class MainContent extends AppCompatActivity {
                 EditText others_edit = (EditText) findViewById(R.id.others_edit);
                 EditText savings_edit = (EditText) findViewById(R.id.savings_edit);
 
-                int income = Integer.parseInt(income_edit.getText().toString());
+                double income = Integer.parseInt(income_edit.getText().toString());
                 if (time_frame.isChecked()) {
-                    income = income * 2;
+                    income = income * 12/13;
                 }
+                double yearlyIncome = income * 13;
+                if(yearlyIncome < 48535){
+                    income = ((float)income)/(1.15+0.0505);
+                }else if(yearlyIncome < 97069){
+                    income = 3733/(1.15+0.0505) + 3733/(1.205+0.0915);
+                }else if(yearlyIncome < 150473){
+                    income = 3733/(1.15+0.0505) + 3733/(1.205+0.0915) + 4108/(1.26+0.1116);
+                }else if(yearlyIncome <214368){
+                    income = 3733/(1.15+0.0505) + 3733/(1.205+0.0915) + 4108/(1.26+0.1116) + 4915/(1.29+0.1216);
+                }else{
+                    income = 3733/(1.15+0.0505) + 3733/(1.205+0.0915) + 4108/(1.26+0.1116) + 4915/(1.29+0.1216) + (yearlyIncome/13-16489)/(1.33+0.1316);
+                }
+
                 int rent = Integer.parseInt(rent_edit.getText().toString());
                 int gas = Integer.parseInt(gas_edit.getText().toString());
                 int water = Integer.parseInt(water_edit.getText().toString());
@@ -51,7 +64,7 @@ public class MainContent extends AppCompatActivity {
 
                 int utilities = gas + water + electricity + phone_bill;
                 int wants = entertainment + hobbies + others;
-                int leftover = income - food_cost - rent - utilities - wants - savings;
+                double leftover = income - food_cost - rent - utilities - wants - savings;
 
                 float precent_food = ((float) food_cost / (float) income) * 100;
                 Log.d("myTag", (precent_food + ""));
@@ -60,6 +73,7 @@ public class MainContent extends AppCompatActivity {
                 float precent_wants = ((float) wants / (float) income) * 100;
                 float precent_saved = ((float) savings / (float) income) * 100;
                 float precent_leftover = ((float) leftover / (float) income) * 100;
+
 
 
                 Intent intent = new Intent(MainContent.this, MainOutput.class);
