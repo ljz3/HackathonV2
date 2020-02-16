@@ -38,6 +38,8 @@ public class MainOutput extends AppCompatActivity {
         String saved = i.getStringExtra("saved");
         String leftover = i.getStringExtra("leftover");
         String income = i.getStringExtra("income");
+        String tips = i.getStringExtra("tips");
+
         Long formated = Math.round(Double.parseDouble(rent)*100);
 
         TextView textboxResult = (TextView) (findViewById(R.id.rent_result));
@@ -54,6 +56,8 @@ public class MainOutput extends AppCompatActivity {
         textboxLeftover.setText(leftover);
         TextView textboxSavings = (TextView) (findViewById(R.id.saving_result));
         textboxSavings.setText(saved);
+        TextView textboxTips = (TextView) (findViewById(R.id.tips));
+        textboxTips.setText(tips);
 
         Button open_button = (Button) findViewById(R.id.MoreTips);
         open_button.setOnClickListener(new View.OnClickListener() {

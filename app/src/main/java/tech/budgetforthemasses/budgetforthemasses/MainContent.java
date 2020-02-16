@@ -35,19 +35,19 @@ public class MainContent extends AppCompatActivity {
 
                 double income = Integer.parseInt(income_edit.getText().toString());
                 if (time_frame.isChecked()) {
-                    income = income * 12/13;
+                    income = income * 12 / 13;
                 }
                 double yearlyIncome = income * 13;
-                if(yearlyIncome < 48535){
-                    income = ((float)income)/(1.15+0.0505);
-                }else if(yearlyIncome < 97069){
-                    income = 3733/(1.15+0.0505) + 3733/(1.205+0.0915);
-                }else if(yearlyIncome < 150473){
-                    income = 3733/(1.15+0.0505) + 3733/(1.205+0.0915) + 4108/(1.26+0.1116);
-                }else if(yearlyIncome <214368){
-                    income = 3733/(1.15+0.0505) + 3733/(1.205+0.0915) + 4108/(1.26+0.1116) + 4915/(1.29+0.1216);
-                }else{
-                    income = 3733/(1.15+0.0505) + 3733/(1.205+0.0915) + 4108/(1.26+0.1116) + 4915/(1.29+0.1216) + (yearlyIncome/13-16489)/(1.33+0.1316);
+                if (yearlyIncome < 48535) {
+                    income = ((float) income) / (1.15 + 0.0505);
+                } else if (yearlyIncome < 97069) {
+                    income = 3733 / (1.15 + 0.0505) + 3733 / (1.205 + 0.0915);
+                } else if (yearlyIncome < 150473) {
+                    income = 3733 / (1.15 + 0.0505) + 3733 / (1.205 + 0.0915) + 4108 / (1.26 + 0.1116);
+                } else if (yearlyIncome < 214368) {
+                    income = 3733 / (1.15 + 0.0505) + 3733 / (1.205 + 0.0915) + 4108 / (1.26 + 0.1116) + 4915 / (1.29 + 0.1216);
+                } else {
+                    income = 3733 / (1.15 + 0.0505) + 3733 / (1.205 + 0.0915) + 4108 / (1.26 + 0.1116) + 4915 / (1.29 + 0.1216) + (yearlyIncome / 13 - 16489) / (1.33 + 0.1316);
                 }
 
                 int rent = Integer.parseInt(rent_edit.getText().toString());
@@ -74,10 +74,22 @@ public class MainContent extends AppCompatActivity {
                 float percent_saved = ((float) savings / (float) income) * 100;
                 float percent_leftover = ((float) leftover / (float) income) * 100;
 
-                boolean rentingTip = percent_rent<30;
 
+                boolean rentingTip = percent_rent < 30;
+                boolean foodTip = percent_food < 9;
+                boolean savedTip = percent_saved < 10;
 
+                String tips = "";
+                if (!rentingTip) {
+                    tips = tips + "- You spend more than 30% of your income on housing, it is worthwhile looking for somewhere cheaper to live.\n\n";
+                }
+                if (!foodTip) {
+                    tips = tips + "- You spend more than 10% of your income on food, it is recommended that you learn how to cook and you should eat out less.\n\n";
 
+                }
+                if (!savedTip) {
+                    tips = tips + "- You put more than 10% of your income in the bank, you should start looking into investing your money.\n\n";
+                }
 
 
                 Intent intent = new Intent(MainContent.this, MainOutput.class);
@@ -88,6 +100,8 @@ public class MainContent extends AppCompatActivity {
                 intent.putExtra("saved", percent_saved + "");
                 intent.putExtra("leftover", percent_leftover + "");
                 intent.putExtra("income", income + "");
+                intent.putExtra("tips", tips);
+
                 startActivity(intent);
 
 
