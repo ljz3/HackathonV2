@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class ChatBOT extends AppCompatActivity {
@@ -16,14 +17,13 @@ public class ChatBOT extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chatbot);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
 
         Button open_button = (Button) findViewById(R.id.MoreTips);
         open_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+//                EditText userInput = (EditText) findViewById(R.id.)
             }
         });
     }
