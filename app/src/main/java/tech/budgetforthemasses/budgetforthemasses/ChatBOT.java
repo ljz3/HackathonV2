@@ -23,7 +23,7 @@ public class ChatBOT extends AppCompatActivity {
         open_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+
             }
         });
     }

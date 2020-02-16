@@ -21,14 +21,6 @@ public class MainOutput extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent startIntent = new Intent(getApplicationContext(), ChatBOT.class);
-                startActivity(startIntent);
-            }
-        });
 
         Intent i = getIntent();
         String food = i.getStringExtra("food");
@@ -67,6 +59,16 @@ public class MainOutput extends AppCompatActivity {
                 startActivity(startIntent);
             }
         });
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent startIntent = new Intent(getApplicationContext(), ChatBOT.class);
+                startActivity(startIntent);
+            }
+        });
+
 
     }
 
