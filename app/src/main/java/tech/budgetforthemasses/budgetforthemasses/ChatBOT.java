@@ -35,34 +35,34 @@ public class ChatBOT extends AppCompatActivity {
 
                 if(input1.getText() == "")
                 {
-                    if(input1.getText().toString().contains("help")) {
+                    if(userInput.getText().toString().contains("help")) {
                         input1.setText(userInput.getText());
                         respond1.setText("What can I help you with, feel free to ask me anything?");
                     }
-                    else if (input1.getText().toString().contains("do")) {
+                    else if (userInput.getText().toString().contains("do")) {
                         input1.setText(userInput.getText());
                         respond1.setText("If you enter your financial information in the given text fields we can provide you with some budgeting advice.");
                     }
-                    else if(input1.getText().toString().contains("advice")) {
+                    else if(userInput.getText().toString().contains("advice")) {
                     input1.setText(userInput.getText());
                     respond1.setText("Sorry we cannot answer that question at the moment, please consider looking at http://i.investopedia.com/inv/pdf/tutorials/budgeting-basics.pdf or another website.");
                     }
                 }
                 else if(input2.getText() == "")
                 {
-                    if(input1.getText().toString().contains("help")) {
+                    if(userInput.getText().toString().contains("help")) {
                         input2.setText(input1.getText());
                         respond2.setText(respond1.getText());
                         input1.setText(userInput.getText());
                         respond1.setText("What can I help you with, feel free to ask me anything?");
                     }
-                    else if (input1.getText().toString().contains("do")) {
+                    else if (userInput.getText().toString().contains("do")) {
                         input2.setText(input1.getText());
                         respond2.setText(respond1.getText());
                         input1.setText(userInput.getText());
                         respond1.setText("If you enter your financial information in the given text fields we can provide you with some budgeting advice.");
                     }
-                    else if(input1.getText().toString().contains("advice")) {
+                    else if(userInput.getText().toString().contains("advice")) {
                         input2.setText(input1.getText());
                         respond2.setText(respond1.getText());
                         input1.setText(userInput.getText());
@@ -72,7 +72,7 @@ public class ChatBOT extends AppCompatActivity {
 
                 }
                 else {
-                    if(input1.getText().toString().contains("help")) {
+                    if(userInput.getText().toString().contains("help")) {
                         input3.setText(input2.getText());
                         respond3.setText(respond2.getText());
                         input2.setText(input1.getText());
@@ -80,7 +80,7 @@ public class ChatBOT extends AppCompatActivity {
                         input1.setText(userInput.getText());
                         respond1.setText("What can I help you with, feel free to ask me anything?");
                     }
-                    else if (input1.getText().toString().contains("do")) {
+                    else if (userInput.getText().toString().contains("do")) {
                         input3.setText(input2.getText());
                         respond3.setText(respond2.getText());
                         input2.setText(input1.getText());
@@ -88,7 +88,7 @@ public class ChatBOT extends AppCompatActivity {
                         input1.setText(userInput.getText());
                         respond1.setText("If you enter your financial information in the given text fields we can provide you with some budgeting advice.");
                     }
-                    else if(input1.getText().toString().contains("advice")) {
+                    else if(userInput.getText().toString().contains("advice")) {
                         input3.setText(input2.getText());
                         respond3.setText(respond2.getText());
                         input2.setText(input1.getText());
