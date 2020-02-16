@@ -44,8 +44,11 @@ public class ChatBOT extends AppCompatActivity {
                         respond1.setText("If you enter your financial information in the given text fields we can provide you with some budgeting advice.");
                     }
                     else if(userInput.getText().toString().contains("advice")) {
-                    input1.setText(userInput.getText());
-                    respond1.setText("Sorry we cannot answer that question at the moment, please consider looking at http://i.investopedia.com/inv/pdf/tutorials/budgeting-basics.pdf or another website.");
+                        input1.setText(userInput.getText());
+                        respond1.setText("Sorry we cannot answer that question at the moment, please consider looking at http://i.investopedia.com/inv/pdf/tutorials/budgeting-basics.pdf or another website.");
+                    }else{
+                        input1.setText(userInput.getText());
+                        respond1.setText("I don't know how to answer that question");
                     }
                 }
                 else if(input2.getText() == "")
@@ -67,6 +70,11 @@ public class ChatBOT extends AppCompatActivity {
                         respond2.setText(respond1.getText());
                         input1.setText(userInput.getText());
                         respond1.setText("Sorry we cannot answer that question at the moment, please consider looking at http://i.investopedia.com/inv/pdf/tutorials/budgeting-basics.pdf or another website.");
+                    }else{
+                        input2.setText(input1.getText());
+                        respond2.setText(respond1.getText());
+                        input1.setText(userInput.getText());
+                        respond1.setText("I don't know how to answer that question");
                     }
 
 
@@ -95,9 +103,17 @@ public class ChatBOT extends AppCompatActivity {
                         respond2.setText(respond1.getText());
                         input1.setText(userInput.getText());
                         respond1.setText("Sorry we cannot answer that question at the moment, please consider looking at http://i.investopedia.com/inv/pdf/tutorials/budgeting-basics.pdf or another website.");
+                    }else{
+                            input3.setText(input2.getText());
+                            respond3.setText(respond2.getText());
+                            input2.setText(input1.getText());
+                            respond2.setText(respond1.getText());
+                            input1.setText(userInput.getText());
+                            respond1.setText("I don't know how to answer that question");
+                        }
                     }
                 }
-            }
+            
         });
     }
 }
