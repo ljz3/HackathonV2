@@ -15,13 +15,13 @@
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
         android:layout_toLeftOf="@+id/open_button"
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/title_text"
         android:textColor="#73b16e"
         android:textSize="40sp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginRight="30dp"
         android:textStyle="bold" />
 
     <Button

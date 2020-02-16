@@ -12,11 +12,11 @@ public class MainWelcome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome_page);
 
-        Button open_button = (Button)findViewById(R.id.open_button);
+        Button open_button = (Button) findViewById(R.id.open_button);
         open_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent startIntent = new Intent(getApplicationContext(),MainContent.class);
+                Intent startIntent = new Intent(getApplicationContext(), MainContent.class);
                 startActivity(startIntent);
             }
         });

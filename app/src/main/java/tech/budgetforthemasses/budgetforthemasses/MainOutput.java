@@ -37,20 +37,20 @@ public class MainOutput extends AppCompatActivity {
         String income = i.getStringExtra("income");
 
 
-        TextView textboxOne = (TextView)(findViewById(R.id.rent_result));
-        textboxOne.setText(rent +"");
-        TextView textboxTwo = (TextView)(findViewById(R.id.incomeAfterTax_result));
+        TextView textboxOne = (TextView) (findViewById(R.id.rent_result));
+        textboxOne.setText(rent + "");
+        TextView textboxTwo = (TextView) (findViewById(R.id.incomeAfterTax_result));
         textboxTwo.setText(income + "");
-        TextView textboxThree = (TextView)(findViewById(R.id.food_result));
-        textboxThree.setText(food +"");
-        TextView textboxFour = (TextView)(findViewById(R.id.util_result));
-        textboxFour.setText(util+"");
-        TextView textboxFive = (TextView)(findViewById(R.id.wants_result));
-        textboxFive.setText(want+"");
-        TextView textboxSix = (TextView)(findViewById(R.id.leftover_result));
-        textboxSix.setText(leftover+"");
-        TextView textboxSeven = (TextView)(findViewById(R.id.saving_result));
-        textboxSeven.setText(saved+"");
+        TextView textboxThree = (TextView) (findViewById(R.id.food_result));
+        textboxThree.setText(food + "");
+        TextView textboxFour = (TextView) (findViewById(R.id.util_result));
+        textboxFour.setText(util + "");
+        TextView textboxFive = (TextView) (findViewById(R.id.wants_result));
+        textboxFive.setText(want + "");
+        TextView textboxSix = (TextView) (findViewById(R.id.leftover_result));
+        textboxSix.setText(leftover + "");
+        TextView textboxSeven = (TextView) (findViewById(R.id.saving_result));
+        textboxSeven.setText(saved + "");
 
     }
 
