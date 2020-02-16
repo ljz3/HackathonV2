@@ -15,6 +15,8 @@
     <dimen name="line_ytran">400dp</dimen>
     <dimen name="line_xtran">50dp</dimen>
     <dimen name="lineText_ytran">350dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
 
 
 </resources>

@@ -25,10 +25,10 @@
     <string name="tips_long"> - It\'s most likely worthwhile to pay off all your debts/loans as fast as possible at the expense of your wants.
                             \n\n- Always pay off your credit card on time. Treat it like a debit card, do not spend what you do not have.
                             \n\n- It is generally considered good practice to have an emergency fund.
-                            \n\n- It is generally considered good practice to have an emergency fund.
                             \n\n- Try to use the 50/30/20 rule, which is 50% for needs, 30% for wants, and 20% for paying off debts or savings.
                             \n\n- Review your spending habits and make sure that you are not spending too much on wants.
                             \n\n- Every month is different, for example December, so plan your spending around these times.
                             \n\n- Track your spending so that when you review you can view all of the various expenses and cut back where you need to.</string>
+    <string name="title_activity_chat_bot">ChatBOT</string>
 
 </resources>
