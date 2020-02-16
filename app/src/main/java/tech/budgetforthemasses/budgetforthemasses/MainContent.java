@@ -66,23 +66,27 @@ public class MainContent extends AppCompatActivity {
                 int wants = entertainment + hobbies + others;
                 double leftover = income - food_cost - rent - utilities - wants - savings;
 
-                float precent_food = ((float) food_cost / (float) income) * 100;
-                Log.d("myTag", (precent_food + ""));
-                float precent_rent = ((float) rent / (float) income) * 100;
-                float precent_util = ((float) utilities / (float) income) * 100;
-                float precent_wants = ((float) wants / (float) income) * 100;
-                float precent_saved = ((float) savings / (float) income) * 100;
-                float precent_leftover = ((float) leftover / (float) income) * 100;
+                float percent_food = ((float) food_cost / (float) income) * 100;
+                Log.d("myTag", (percent_food + ""));
+                float percent_rent = ((float) rent / (float) income) * 100;
+                float percent_util = ((float) utilities / (float) income) * 100;
+                float percent_wants = ((float) wants / (float) income) * 100;
+                float percent_saved = ((float) savings / (float) income) * 100;
+                float percent_leftover = ((float) leftover / (float) income) * 100;
+
+                boolean rentingTip = percent_rent<30;
+
+
 
 
 
                 Intent intent = new Intent(MainContent.this, MainOutput.class);
-                intent.putExtra("food", precent_food + "");
-                intent.putExtra("rent", precent_rent + "");
-                intent.putExtra("util", precent_util + "");
-                intent.putExtra("want", precent_wants + "");
-                intent.putExtra("saved", precent_saved + "");
-                intent.putExtra("leftover", precent_leftover + "");
+                intent.putExtra("food", percent_food + "");
+                intent.putExtra("rent", percent_rent + "");
+                intent.putExtra("util", percent_util + "");
+                intent.putExtra("want", percent_wants + "");
+                intent.putExtra("saved", percent_saved + "");
+                intent.putExtra("leftover", percent_leftover + "");
                 intent.putExtra("income", income + "");
                 startActivity(intent);
 

@@ -22,5 +22,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_output">Output</string>
     <string name="title_activity_main_output">MainOutput</string>
+    <string name="tips_long"> - It\'s most likely worthwhile to pay off all your debts/loans as fast as possible at the expense of your wants.
+                            \n\n- Always pay off your credit card on time. Treat it like a debit card, do not spend what you do not have.
+                            \n\n- It is generally considered good practice to have an emergency fund.</string>
 
 </resources>
