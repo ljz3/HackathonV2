@@ -33,7 +33,11 @@ public class MainContent extends AppCompatActivity {
                 EditText others_edit = (EditText) findViewById(R.id.others_edit);
                 EditText savings_edit = (EditText) findViewById(R.id.savings_edit);
 
-                double income = Integer.parseInt(income_edit.getText().toString());
+
+                double income = 0;
+                if (!rent_edit.getText().toString().matches("")) {
+                    income = Integer.parseInt(income_edit.getText().toString());
+                }
                 if (time_frame.isChecked()) {
                     income = income * 12 / 13;
                 }
@@ -50,16 +54,68 @@ public class MainContent extends AppCompatActivity {
                     income = 3733 / (1.15 + 0.0505) + 3733 / (1.205 + 0.0915) + 4108 / (1.26 + 0.1116) + 4915 / (1.29 + 0.1216) + (yearlyIncome / 13 - 16489) / (1.33 + 0.1316);
                 }
 
-                int rent = Integer.parseInt(rent_edit.getText().toString());
-                int gas = Integer.parseInt(gas_edit.getText().toString());
-                int water = Integer.parseInt(water_edit.getText().toString());
-                int electricity = Integer.parseInt(electricity_edit.getText().toString());
-                int phone_bill = Integer.parseInt(phone_bill_edit.getText().toString());
-                int food_cost = Integer.parseInt(food_cost_edit.getText().toString());
-                int entertainment = Integer.parseInt(entertainment_edit.getText().toString());
-                int hobbies = Integer.parseInt(hobbies_edit.getText().toString());
-                int others = Integer.parseInt(others_edit.getText().toString());
-                int savings = Integer.parseInt(savings_edit.getText().toString());
+                int rent = 0;
+
+                if (!rent_edit.getText().toString().matches("")) {
+                    rent = Integer.parseInt(rent_edit.getText().toString());
+                }
+                int gas = 0;
+                if (!gas_edit.getText().toString().matches("")) {
+                    gas = Integer.parseInt(gas_edit.getText().toString());
+
+                }
+
+                int water = 0;
+                if (!water_edit.getText().toString().matches("")) {
+                    water = Integer.parseInt(water_edit.getText().toString());
+
+                }
+
+                int electricity = 0;
+                if (!electricity_edit.getText().toString().matches("")) {
+                    electricity = Integer.parseInt(electricity_edit.getText().toString());
+
+                }
+                int phone_bill = 0;
+                if (!phone_bill_edit.getText().toString().matches("")) {
+                    phone_bill = Integer.parseInt(phone_bill_edit.getText().toString());
+
+                }
+
+                int food_cost = 0;
+
+                if (!food_cost_edit.getText().toString().matches("")) {
+                    food_cost = Integer.parseInt(food_cost_edit.getText().toString());
+
+                }
+
+                int entertainment = 0;
+
+                if (!entertainment_edit.getText().toString().matches("")) {
+                    entertainment = Integer.parseInt(entertainment_edit.getText().toString());
+
+                }
+
+                int hobbies = 0;
+
+                if (!hobbies_edit.getText().toString().matches("")) {
+                    hobbies = Integer.parseInt(hobbies_edit.getText().toString());
+
+                }
+
+                int others = 0;
+
+                if (!others_edit.getText().toString().matches("")) {
+                    others = Integer.parseInt(others_edit.getText().toString());
+
+                }
+
+                int savings = 0;
+
+                if (!savings_edit.getText().toString().matches("")) {
+                    savings = Integer.parseInt(savings_edit.getText().toString());
+
+                }
 
 
                 int utilities = gas + water + electricity + phone_bill;
