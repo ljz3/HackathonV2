@@ -56,4 +56,6 @@ public class MainOutput extends AppCompatActivity {
 
     }
 
+    public void MoreTips(View view) {
+    }
 }
