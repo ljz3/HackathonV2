@@ -26,12 +26,12 @@ public class ChatBOT extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 EditText userInput = (EditText) findViewById(R.id.user_input_text);
-                TextView input1 = (TextView)findViewById(R.id.text_input1);
-                TextView input2 = (TextView)findViewById(R.id.text_input2);
-                TextView input3 = (TextView)findViewById(R.id.text_input3);
-                TextView respond1 =(TextView)findViewById(R.id.text_response1);
-                TextView respond2 =(TextView)findViewById(R.id.text_response2);
-                TextView respond3 =(TextView)findViewById(R.id.text_response3);
+                TextView input1 = (TextView)findViewById(R.id.test_input1);
+                TextView input2 = (TextView)findViewById(R.id.test_input2);
+                TextView input3 = (TextView)findViewById(R.id.test_input3);
+                TextView respond1 =(TextView)findViewById(R.id.test_response1);
+                TextView respond2 =(TextView)findViewById(R.id.test_response2);
+                TextView respond3 =(TextView)findViewById(R.id.test_response3);
 
                 if(input1.getText() == "")
                 {
