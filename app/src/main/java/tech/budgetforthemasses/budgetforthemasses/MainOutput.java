@@ -21,7 +21,6 @@ public class MainOutput extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
         Intent i = getIntent();
         String food = i.getStringExtra("food");
         String rent = i.getStringExtra("rent");
