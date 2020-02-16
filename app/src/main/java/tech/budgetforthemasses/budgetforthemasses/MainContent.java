@@ -3,6 +3,7 @@ package tech.budgetforthemasses.budgetforthemasses;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -54,6 +55,7 @@ public class MainContent extends AppCompatActivity {
                 int leftover = income - food_cost - rent - utilities - wants - savings;
 
                 float precent_food = ((float)food_cost / (float)income)*100;
+                Log.d("myTag", (precent_food +""));
                 float precent_rent = ((float)rent / (float)income)*100;
                 float precent_util = ((float)utilities / (float)income)*100;
                 float precent_wants = ((float)wants / (float)income)*100;
@@ -62,12 +64,13 @@ public class MainContent extends AppCompatActivity {
 
 
                Intent intent = new Intent(MainContent.this,MainOutput.class);
-               intent.putExtra("food", precent_food);
-                intent.putExtra("rent", precent_rent);
-                intent.putExtra("util", precent_util);
-                intent.putExtra("want", precent_wants);
-                intent.putExtra("saved", precent_saved);
-                intent.putExtra("leftover", precent_leftover);
+               intent.putExtra("food", precent_food +"");
+                intent.putExtra("rent", precent_rent+"");
+                intent.putExtra("util", precent_util+"");
+                intent.putExtra("want", precent_wants+"");
+                intent.putExtra("saved", precent_saved+"");
+                intent.putExtra("leftover", precent_leftover+"");
+                intent.putExtra("income", income+"");
                 startActivity(intent);
 
 

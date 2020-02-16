@@ -45,12 +45,192 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="monospace"
-                    android:text="Income After Tax $"
+                    android:text="Income After Tax (%)"
                     android:textColor="@color/textColor"
                     android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/incomeAfterTax_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:gravity="end"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/edit_field_margin"
+                    android:text="Testing"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rent_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/edit_field_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rent_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="Rent Due (%)"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/rent_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:gravity="end"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/edit_field_margin"
+                    android:text="Testing"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/food_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/edit_field_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/food_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="Spent on Food (%)"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/food_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:gravity="end"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/edit_field_margin"
+                    android:text="Testing"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/util_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/edit_field_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/util_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="Spent on Utilities (%)"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/util_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:gravity="end"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/edit_field_margin"
+                    android:text="Testing"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wants_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/edit_field_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/wants_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="Spent on Wants (%)"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/wants_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:gravity="end"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/edit_field_margin"
+                    android:text="Testing"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/saving_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/edit_field_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/saving_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="Ammount sent to savings (%)"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/saving_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:gravity="end"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/edit_field_margin"
+                    android:text="Testing"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/leftover_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/edit_field_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/leftover_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="Total Leftover (%)"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/leftover_result"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="monospace"
