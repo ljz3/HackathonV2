@@ -16,12 +16,13 @@ public class Redirection extends AppCompatActivity {
         setContentView(R.layout.extra_tips);
 
 
-        Button open_button = (Button) findViewById(R.id.MoreTips);
+        Button open_button = (Button) findViewById(R.id.additionalResources);
         open_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent startIntent = new Intent(getApplicationContext(), ExtraTips.class);
-                startActivity(startIntent);
+                Intent viewIntent =
+                        new Intent("android.intent.action.VIEW", Uri.parse("https://www.investopedia.com/articles/personal-finance/123115/best-ways-invest-500-5000.asp"));
+                startActivity(viewIntent);
             }
         });
     }

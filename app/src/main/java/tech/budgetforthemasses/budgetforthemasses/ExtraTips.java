@@ -11,6 +11,7 @@ public class ExtraTips extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.extra_tips);
 
 
         Button open_button = (Button) findViewById(R.id.additionalResources);
